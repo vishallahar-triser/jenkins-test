@@ -11,3 +11,5 @@ job('jobtest') {
       	batchFile('java test')
     }
 }
+
+print "testing groovy"
