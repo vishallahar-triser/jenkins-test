@@ -9,7 +9,7 @@ job('jobtest') {
     steps {
         batchFile('javac test.java')
       	batchFile('java test')
+        print "testing groovy"
     }
-}
 
-print "testing groovy"
+}
