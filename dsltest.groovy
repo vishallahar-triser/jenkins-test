@@ -8,3 +8,7 @@ String greet(String otherPerson) {
     }
 
 println greet("Vishal")
+def env = System.getenv()
+env.each{
+println it
+}
