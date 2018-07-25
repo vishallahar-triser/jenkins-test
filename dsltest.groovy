@@ -16,10 +16,16 @@ class Person {
     String greet(String otherPerson) {
        "Hello ${otherPerson}"
     }
+    String setName(String name){
+    	this.name = name
+    }
+    String getName(){
+    	return name
+    }
 }
 def p = new Person()
-assert p.name == 'Vishal'
-println p.greet("Vishal")
+p.setName "Jim"
+println p.greet "Vishal" + ". My name is " + p.getName
 
 
 
