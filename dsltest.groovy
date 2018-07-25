@@ -18,7 +18,7 @@ class Person {
     }
 }
 def p = new Person()
-def p.name = 'Vishal'
+assert p.name == 'Vishal'
 println p.greet("Vishal")
 
 
