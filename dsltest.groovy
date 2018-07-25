@@ -13,19 +13,19 @@ class Person {
      * @param otherPerson the person to greet
      * @return a greeting message
      */
-    String greet(String otherPerson) {
+    def greet(String otherPerson) {
        "Hello ${otherPerson}"
     }
-    String setName(String name){
+    def setName(String name){
     	this.name = name
     }
-    String getName(){
+    def getName(){
     	name
     }
 }
 def p = new Person()
 p.setName "Jim"
-println p.getName
+println p.getName()
 println p.greet("Vishal")
 
 
