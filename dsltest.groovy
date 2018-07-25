@@ -14,7 +14,7 @@ class Person {
      * @return a greeting message
      */
     def greet(String otherPerson) {
-       "Hello ${otherPerson}. My name is " + getName()
+       "Hello ${otherPerson}. My name is " + getName() + "."
     }
     def setName(String name){
     	this.name = name
@@ -25,9 +25,10 @@ class Person {
 }
 def p = new Person()
 p.setName "Jim"
-
+Person p1 = new Person()
+p1.setName "Bob"
 println p.greet("Vishal")
-
+println p1.greet("Jim")
 
 
 def env = System.getenv()
