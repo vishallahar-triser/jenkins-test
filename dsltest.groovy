@@ -25,8 +25,8 @@ class Person {
 }
 def p = new Person()
 p.setName "Jim"
-println p.getName()
-println p.greet("Vishal")
+
+println p.greet("Vishal") + ". My Name is " + p.getName + "."
 
 
 
